@@ -80,10 +80,9 @@ export function HeroSection() {
                 <div className="flex items-center gap-2" style={{ animation: "fadeInUp 0.4s ease 200ms both" }}>
                   <span className="text-terminal-gold shrink-0 select-none">$</span>
                   <span className="whitespace-nowrap">
-                    <Cmd>bash</Cmd> <Flag>&lt;(</Flag><Cmd>curl</Cmd> <Flag>-fsSL</Flag>{" "}
-                    <Str>https://raw.githubusercontent.com/.../install.sh</Str><Flag>)</Flag>
+                    <Cmd>npx</Cmd> <Str>claude-prime</Str> <Flag>install</Flag>
                   </span>
-                  <TerminalCopyButton text="bash <(curl -fsSL https://raw.githubusercontent.com/avibebuilder/claude-prime/main/install.sh)" />
+                  <TerminalCopyButton text="npx claude-prime install" />
                 </div>
 
                 <TerminalGap />

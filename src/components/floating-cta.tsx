@@ -20,7 +20,7 @@ export function FloatingCTA() {
 
   const handleCopy = async () => {
     await navigator.clipboard.writeText(
-      "bash <(curl -fsSL https://raw.githubusercontent.com/avibebuilder/claude-prime/main/install.sh)"
+      "npx claude-prime install"
     );
   };
 

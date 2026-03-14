@@ -17,7 +17,7 @@ const steps = [
 ];
 
 const copyTexts = [
-  'bash <(curl -fsSL https://raw.githubusercontent.com/avibebuilder/claude-prime/main/install.sh)',
+  'npx claude-prime install',
   '/optimus-prime',
   '/cook Add authentication with magic links',
 ];
@@ -63,12 +63,7 @@ export function GetStartedSection() {
                   {i === 0 && (
                     <TerminalWindow title="install — zsh">
                       <TerminalLine>
-                        <Cmd>bash</Cmd> <Flag>&lt;(</Flag>
-                        <Cmd>curl</Cmd> <Flag>-fsSL</Flag>{" "}
-                        <Str>
-                          https://raw.githubusercontent.com/.../install.sh
-                        </Str>
-                        <Flag>)</Flag>
+                        <Cmd>npx</Cmd> <Str>claude-prime</Str> <Flag>install</Flag>
                       </TerminalLine>
                     </TerminalWindow>
                   )}

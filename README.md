@@ -24,7 +24,7 @@ That's it. One prompt. No human code written.
 Skeptical? Fair. Clone [Claude Prime](https://github.com/avibebuilder/claude-prime), prime your own repo, and see what Claude Code can actually do when properly configured.
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/avibebuilder/claude-prime/main/install.sh)
+npx claude-prime install
 ```
 
 

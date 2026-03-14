@@ -54,7 +54,7 @@ export function CopyButton({
 export function CopyInstallButton() {
   const [copied, setCopied] = useState(false);
   const installCmd =
-    "bash <(curl -fsSL https://raw.githubusercontent.com/avibebuilder/claude-prime/main/install.sh)";
+    "npx claude-prime install";
 
   const handleCopy = async () => {
     await navigator.clipboard.writeText(installCmd);
